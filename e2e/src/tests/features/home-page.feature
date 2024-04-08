@@ -1,5 +1,5 @@
 Feature: As a User I expect to be able to navigate to the home page
 
-    Scenario: As a user I expect to be able to see contacts
+    Scenario: As a user I expect to be able to see Book Cart page title
         Given I am on the home page
-        Then The contacts header should contain the text Contacts
+        Then The page header should contain the text Book Cart

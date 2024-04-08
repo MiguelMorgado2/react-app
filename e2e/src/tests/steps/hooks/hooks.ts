@@ -11,7 +11,7 @@ AfterAll(async function ()  {
     await global.browser.close();
     });
 
-AfterAll(async function ()  {
+Before(async function ()  {
     global.context = await global.browser.newContext();
     global.page = await global.context.newPage();
     });
@@ -19,3 +19,5 @@ AfterAll(async function ()  {
 After(async function ()  {
      await global.page.close();
  });
+
+ 

@@ -1,4 +1,6 @@
-import {Given} from "@cucumber/cucumber"
+import {Given, setDefaultTimeout} from "@cucumber/cucumber"
+
+setDefaultTimeout(60 * 1000 * 2)
 
 Given(
   /^I am on the home page$/,
@@ -6,6 +8,6 @@ Given(
 
     console.log("I am on the home page");
 
-    await global.page.goto("http://localhost:3000/")
+    await global.page.goto("https://bookcart.azurewebsites.net/")
   }
 )

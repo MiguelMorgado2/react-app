@@ -27,6 +27,7 @@
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start"
+    
   },
   "eslintConfig": {
     "extends": [
@@ -45,5 +46,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/MiguelMorgado2/react-app.git",
+  "author": "Miguel <mmorgado1@PMINTL.NET>",
+  "license": "MIT"
 }
