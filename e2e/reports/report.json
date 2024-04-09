@@ -1,0 +1,92 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-a-user-i-expect-to-be-able-to-navigate-to-the-home-page;as-a-user-i-expect-to-be-able-to-see-book-cart-page-title",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "As a user I expect to be able to see Book Cart page title",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 685393899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am on the \"home\" page",
+            "match": {
+              "location": "src\\tests\\steps\\navigation.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10003843399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "The \"page header\" should contain the text \" Book Cart \"",
+            "match": {
+              "location": "src\\tests\\steps\\assertions\\verify-element-visibility.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31059200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "The \"Search field\" should be displayed",
+            "match": {
+              "location": "src\\tests\\steps\\assertions\\verify-element-visibility.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14242300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 107692299
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dev",
+            "line": 3
+          },
+          {
+            "name": "@smoke",
+            "line": 3
+          },
+          {
+            "name": "@regression",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-a-user-i-expect-to-be-able-to-navigate-to-the-home-page",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "As a User I expect to be able to navigate to the home page",
+    "tags": [],
+    "uri": "src\\tests\\features\\home-page.feature"
+  }
+]
