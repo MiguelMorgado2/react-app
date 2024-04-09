@@ -1,3 +1,10 @@
+import dotenv from 'dotenv'
+import { env } from './tests/env/parsEnv';
+
+dotenv.config({
+    path: env('COMMON_CONFIG_FILE')
+})
+
 const common = `./src/tests/features/**/*.feature \
                 --require-module ts-node/register \
                 --require ./src/tests/steps/**/**/*.ts \
