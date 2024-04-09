@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cucumber": "cucumber-js src/tests/features/**/*.feature --require-module ts-node/register --require src/tests/steps/**/**/*.ts"
+    "cucumber:dev": "cucumber-js src/tests/features/**/*.feature --tags @dev --require-module ts-node/register --require src/tests/steps/**/**/*.ts",
+    "cucumber:smoke": "cucumber-js src/tests/features/**/*.feature --tags @smoke --require-module ts-node/register --require src/tests/steps/**/**/*.ts",
+    "cucumber:regression": "cucumber-js src/tests/features/**/*.feature --tags @regression --require-module ts-node/register --require src/tests/steps/**/**/*.ts"
   },
   "author": "",
   "license": "ISC",
