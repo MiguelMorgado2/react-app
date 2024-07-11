@@ -4,11 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "test": "echo \"Error: no test specified\" && exit 1"
+=======
+    "precucumber": "rimraf reports && mkdir reports && echo {} > reports/reports.json",
+    "transpile": "rimraf dist && babel --extensions .ts --out-dir dist src",
+    "cucumber-compile": "yarn transpile && cucumber-js",
+    "cucumber": "cross-env COMMON_CONFIG_FILE=env/common.env yarn cucumber-compile",
+    "postcucumber": "cross-env COMMON_CONFIG_FILE=env/common.env ts-node ./src/tests/reporter/cucumber-report.ts"
+>>>>>>> 54db09b25b80a316d0b010282a9d7329f9b4a6bc
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+<<<<<<< HEAD
     "@cucumber/cucumber": "^10.8.0",
     "@playwright/test": "^1.45.1",
     "playwright": "^1.45.1",
@@ -16,5 +25,21 @@
   },
   "dependencies": {
     "typescript": "^5.5.3"
+=======
+    "@babel/cli": "^7.24.1",
+    "@babel/preset-env": "^7.24.4",
+    "@babel/preset-typescript": "^7.24.1",
+    "@cucumber/cucumber": "^10.3.2",
+    "@playwright/test": "^1.42.1",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "playwright": "^1.42.1",
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "cucumber-html-reporter": "^7.1.1"
+>>>>>>> 54db09b25b80a316d0b010282a9d7329f9b4a6bc
   }
 }

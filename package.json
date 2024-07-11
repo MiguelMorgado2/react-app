@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.24.0",
     "bootstrap": "5.1.3",
+    "cucumber": "^6.0.7",
     "material-ui-popup-state": "^2.0.0",
     "muicss": "^0.10.3",
     "react": "^17.0.2",
@@ -26,6 +27,7 @@
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start"
+    
   },
   "eslintConfig": {
     "extends": [
@@ -44,5 +46,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/MiguelMorgado2/react-app.git",
+  "author": "Miguel <mmorgado1@PMINTL.NET>",
+  "license": "MIT"
 }
